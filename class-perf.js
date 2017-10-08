@@ -7,11 +7,6 @@ module.exports = class Letter {
     }
 
     letter(char) {
-        if (this.ascii) {
-            return char <127;
-        }else{
-            return char < 554;
-        }
+        return this.ascii ? char <127 : char < 554;
     }
-
 }

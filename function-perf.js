@@ -9,12 +9,7 @@ function letterUft8(char) {
 }
 
 function letterFactory(ascii) {
-
-    if (ascii) {
-        return letterAscii;
-    } else {
-        return letterUft8;
-    }
+    return ascii ? letterAscii : letterUft8;
 }
 
 module.exports = letterFactory;
